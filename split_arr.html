@@ -1,0 +1,24 @@
+//split array intotwo
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>arrsplit</title>
+  </head>
+  <body>
+    <h1>Java srit string</h1>
+    <button onclick="split()">click here</button>
+    <p>THe split method and</p>
+    <script>
+      function split() {
+        var arr = ["a", "b", "c", "d", "e", "f"];
+        var indexToSplit = arr.indexOf("c");
+        var first = arr.slice(0, indexToSplit);
+        var second = arr.slice(indexToSplit + 1);
+        prompt(first, second);
+      }
+    </script>
+  </body>
+</html>

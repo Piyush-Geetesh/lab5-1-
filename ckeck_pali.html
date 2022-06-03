@@ -1,0 +1,29 @@
+//checking palndrome
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>finding palindrome</p>
+    <input type="text" id="arrvalues" />
+    <button type="button" name="button" onclick="find_pali()">
+      click here
+    </button>
+    <script>
+      function find_pali() {
+        let arrayValues = document.getElementById("arrvalues").value;
+        let no = arrayValues.length;
+        for (let i = 0, j = no - 1; i < j; i++, j--) {
+          if (arrayValues[i] != arrayValues[j]) {
+            alert("false");
+          }
+        }
+        alert("true");
+      }
+    </script>
+  </body>
+</html>

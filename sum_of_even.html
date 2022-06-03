@@ -1,0 +1,28 @@
+//sum of even numbers in array
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>finding sum</p>
+    <input type="int" id="arrvalues" />
+    <button type="button" name="button" onclick="findSum()">click here</button>
+    <script>
+      function findSum() {
+        let sum = 0;
+        let arrayValues = document.getElementById("arrvalues").value;
+        let no = arrayValues.length;
+        for (let i = 0; i < on; i++) {
+          if (arrayValues[i] % 2 == 0) {
+            sum += arrayValues[i];
+          }
+        }
+        alert(sum);
+      }
+    </script>
+  </body>
+</html>
